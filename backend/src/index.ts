@@ -150,7 +150,7 @@ app.get('/api/v1/content',userMiddleware, async function(req:Request,res:Respons
         const contents = await ContentModel.find({ userId }).populate('tags');
         res.json(contents);
     } catch(error: any){
-        res.status(500).json({" message: 'Error fetching content", error: error.message})
+        res.status(500).json({ message: 'Error fetching content', error: error.message})
     }
 })
 //@ts-ignore
