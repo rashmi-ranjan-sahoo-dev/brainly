@@ -1,11 +1,12 @@
 import React from 'react'
 import { Button } from './components/ui/Button'
+import PlusIcon from './components/icons/PlusIcon'
 
 const App = () => {
   return (
     <div>
-      <Button variant="primary" text="ok" />
-      <Button variant="secondary" text="not-ok" />
+      <Button startIcon={<PlusIcon/>} size='md' variant="primary" text="Rinku" />
+      <Button size='lg' variant="secondary" text="not-ok" />
     </div>
   )
 }
